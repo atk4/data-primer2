@@ -8,5 +8,6 @@ class Client extends \atk4\data\Model {
         parent::init();
 
         $this->addFields(['name','address']);
+        $this->hasMany('Project', new Project());
     }
 }
